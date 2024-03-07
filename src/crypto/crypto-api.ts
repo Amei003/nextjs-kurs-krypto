@@ -33,7 +33,7 @@ export const fetchChartData = async (
   currency: string
 ): Promise<CryptoTimeSeries> => {
   // Info om dette endepunktet: https://min-api.cryptocompare.com/documentation?key=Historical&cat=dataHistoday
-  const url = `${baseUrl}/data/v2/histoday?fsym=${currency}&tsym=USD&limit=30&e=CCCAGG`;
+  const url = `${baseUrl}/data/v2/histoday?fsym=${currency}&tsym=USD&limit=90&e=CCCAGG`;
 
   const response = await fetch(url, {
     headers: {
